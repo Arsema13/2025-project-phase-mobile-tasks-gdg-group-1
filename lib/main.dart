@@ -36,7 +36,7 @@ void main() async {
 class MyApp extends StatelessWidget {
   final List<Product> products;
 
-  const MyApp({Key? key, required this.products}) : super(key: key);
+  const MyApp({super.key, required this.products});
 
   @override
   Widget build(BuildContext context) {
@@ -50,14 +50,14 @@ class MyApp extends StatelessWidget {
 class ProductListScreen extends StatelessWidget {
   final List<Product> products;
 
-  const ProductListScreen({Key? key, required this.products}) : super(key: key);
+  const ProductListScreen({super.key, required this.products});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('eCommerce App')),
+      appBar: AppBar(title: const Text('eCommerce App')),
       body: products.isEmpty
-          ? Center(child: Text('No products available'))
+          ? const Center(child: Text('No products available'))
           : ListView.builder(
               itemCount: products.length,
               itemBuilder: (context, index) {
