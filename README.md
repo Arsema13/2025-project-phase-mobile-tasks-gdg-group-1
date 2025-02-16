@@ -1,6 +1,6 @@
 # ecommerce
 
-A new Flutter project.
+Gdg Flutter Task Group 1(Arsema Tewodros)
 
 ## Getting Started
 
